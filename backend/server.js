@@ -19,6 +19,9 @@ app.get("/weather", async (req, res) => {
   const data = await response.json();
   res.json(data);
 });
+app.get("/", (req, res) => {
+  res.send("Weather API backend is running!");
+});
 
 app.listen(5000, () => {
   console.log("Backend running on port 5000");

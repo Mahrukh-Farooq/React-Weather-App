@@ -2,11 +2,6 @@ import './App.css'
 import warmBg from './assets/warm-background.jpg'
 import React, {useState} from 'react';
 
-/*const api = {
-  key:"b8865e5c07edf5e177980055ba93dd3f",
-  base:"https://api.openweathermap.org/data/2.5/",
-  
-}*/
 
 function App() {
   const dateBuilder = (d) => {

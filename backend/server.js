@@ -1,11 +1,13 @@
 import express from "express";
 import cors from "cors";
 import fetch from "node-fetch";
+import dotenv from "dotenv";
+dotenv.config();
 
 const app = express();
 app.use(cors());
 
-const API_KEY = "b8865e5c07edf5e177980055ba93dd3f";
+const API_KEY = process.env.API_KEY;
 
 app.get("/weather", async (req, res) => {
   const city = req.query.city;

@@ -23,7 +23,7 @@ const [weather, setWeather]  = useState({});
 /*fetch request to connect to backend */
 const search = evt => {
   if (evt.key == "Enter") {
-      fetch(`http://localhost:5000/weather?city=${encodeURIComponent(query.trim())}`)
+    fetch(`https://react-weather-app-2-eyl7.onrender.com/weather?city=${encodeURIComponent(query.trim())}`)
   .then(res => res.json())
   .then(result => {
   setWeather(result);
